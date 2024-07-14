@@ -7,10 +7,21 @@ use Illuminate\Http\Request;
 
 class TourController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        $tours = Tour::all();
-        dd($tours);
+        $search = $request->input('search');
+
+        $query = Tour::query();
+
+        if ($search) {
+            $query->where('title', 'LIKE', "%{$search}%")
+                  ->orWhere('description', 'LIKE', "%{$search}%")
+                  ->orWhere('price', 'LIKE', "%{$search}%");
+        }
+
+        $tours = $query->get();
+
         return response()->json($tours);
     }
+    
 }
