@@ -16,47 +16,47 @@ class TourSeeder extends Seeder
     {
         $tours = [
             [
-                'title' => 'Tour Title 1',
-                'description' => 'Description of Tour 1',
-                'price' => 100.00,
-                'image' => 'images/ambuluwawa.jpg',
+                'title' => 'Sigirya',
+                'description' => 'Sigirya palace ruins on top of a massive 200 meter high rock',
+                'price' => 'USD 200.00',
+                'image' => 'images/segiriya.jpg',
             ],
             [
-                'title' => 'Tour Title 2',
-                'description' => 'Description of Tour 2',
-                'price' => 450.00,
+                'title' => 'Ambuluwawa',
+                'description' => 'Ambuluwawa Tower is a unique, whimsical spiral tower and temple complex perched on a hilltop',
+                'price' => 'USD 300.00',
                 'image' => 'images/ambuluwawa.jpg',
 
             ],
             [
-                'title' => 'Tour Title 3',
-                'description' => 'Description of Tour 3',
-                'price' => 850.00,
-                'image' => 'images/ambuluwawa.jpg',
-
-            ],
-
-            [
-                'title' => 'Tour Title 4',
-                'description' => 'Description of Tour 4',
-                'price' => 950.00,
-                'image' => 'images/ambuluwawa.jpg',
+                'title' => 'Negombo',
+                'description' => 'Negombo City is known for its alluring beaches and centuries-old fishing industry.',
+                'price' => 'USD 80.00',
+                'image' => 'images/negombo2.jpg',
 
             ],
 
             [
-                'title' => 'Tour Title 5',
-                'description' => 'Description of Tour 5',
-                'price' => 150.00,
-                'image' => 'images/ambuluwawa.jpg',
+                'title' => 'Kandy',
+                'description' => 'DSri Dalada Maligawa, commonly known in English as the Temple of the Sacred Tooth Relic',
+                'price' => 'USD 100.00',
+                'image' => 'images/kandy.jpg',
 
             ],
 
             [
-                'title' => 'Tour Title 6',
-                'description' => 'Description of Tour 6',
-                'price' => 150.00,
-                'image' => 'images/ambuluwawa.jpg',
+                'title' => 'Galle',
+                'description' => 'Galle is a city on the southwest coast of Sri Lanka. It’s known for Galle Fort, the fortified old city founded by Portuguese',
+                'price' => 'USD 100.00',
+                'image' => 'images/galle.jpg',
+
+            ],
+
+            [
+                'title' => 'Negombo',
+                'description' => 'Negombo City is known for its alluring beaches and centuries-old fishing industry.',
+                'price' => 'USD 100.00',
+                'image' => 'images/negombo.jpg',
 
             ],
 
