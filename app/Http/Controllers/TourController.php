@@ -23,5 +23,12 @@ class TourController extends Controller
 
         return response()->json($tours);
     }
-    
+
+
+    public function show($id)
+    {
+        $tour = Tour::findOrFail($id); // Assuming Tour model exists with appropriate fields
+        return response()->json($tour);
+    }
+
 }

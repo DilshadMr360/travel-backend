@@ -11,5 +11,14 @@ class Tour extends Model
 
     protected $fillable = ['title', 'description', 'price', 'image']; // Add 'image' if necessary
 
-    // Add any additional methods or relationships here
+    public function bookings()
+    {
+        return $this->hasMany(Booking::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'bookings');
+    }
+
 }

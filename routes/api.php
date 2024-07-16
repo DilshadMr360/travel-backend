@@ -25,3 +25,4 @@ Route::post('/login', [AuthController::class, 'login']);
 
 
 Route::get('/tours', [TourController::class, 'index']);
+Route::get('/tours/{id}', [TourController::class, 'show']);
